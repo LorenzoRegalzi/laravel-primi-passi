@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 Route::get('/first', function () {
     return view('first');
-});
+})->name('first');

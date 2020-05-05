@@ -1,0 +1,28 @@
+footer{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 50px;
+    @media screen and (max-width: 768px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .container{
+        float: left;
+        position: relative;
+        width: calc(100% / 3);
+        background-color: #fff;
+        margin-bottom: 50px;
+        @media screen and (max-width: 768px) {
+          width: calc(100% / 2);
+        }
+        @media screen and (max-width: 400px) {
+            width: 100%;
+        }
+        ul {
+        list-style: none;
+            a{
+                color: $link-color;
+            }
+        }
+    }
+}

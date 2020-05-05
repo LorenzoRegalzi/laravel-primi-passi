@@ -1,28 +1,20 @@
 //
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import 'partials/_variables';
+@import '_variables';
+@import '_reset';
+@import '_mixin';
+@import '_common';
+@import 'partials/_main';
+@import 'partials/_header';
+@import 'partials/_footer';
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media (min-width: 768px) {
+  .card{
+    flex-basis: calc(100% / 2);
+  }
 }
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-a {
-    text-decoration: none;
-}
-header{
-    background-color: #fff;
-    text-align: center;
-    .main-menu{
-        list-style: none;
-        li {
-            display: inline-block;
-        }
-        a{
-            color: $link-color;
-        }
+@media (min-width: 320px) {
+    .card{
+      flex-basis: calc(100% / 1);
     }
 }

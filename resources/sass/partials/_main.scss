@@ -1,0 +1,37 @@
+main {
+    .card-list {
+        background-color: azure;
+        h1 {
+            color: blue;
+        }
+        .cards {
+            flex-wrap:wrap;
+            display:flex;
+            .card {
+                flex-basis: calc(100% / 3);
+                position: relative;
+                padding: 5px;
+                @media screen and (max-width: 768px) {
+                  flex-basis: calc(100% / 2);
+                }
+                @media screen and (max-width: 400px) {
+                    flex-basis: 100%;
+                }
+                img {
+                    width: 100%;
+                }
+                .hover {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+                    a {
+                        padding-bottom: 10px;
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+header{
+    background-color: #fff;
+    text-align: center;
+    list-style: none;
+        li {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+
+        &:hover{
+            background-color: azure;
+        }
+        a {
+            color: $link-color;
+            font-size: 15px;
+            width: 100%
+        }
+    }
+}

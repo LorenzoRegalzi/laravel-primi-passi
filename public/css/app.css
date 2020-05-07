@@ -13,8 +13,8 @@ a {
   color: black;
 }
 
-main .card-list {
-  background-color: azure;
+main {
+  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
 }
 
 main .card-list h1 {
@@ -36,7 +36,7 @@ main .card-list .cards .card {
 
 @media screen and (max-width: 768px) {
   main .card-list .cards .card {
-    flex-basis: calc(100% / 2);
+    flex-basis: calc(100% / 2 - 40px);
   }
 }
 
@@ -146,6 +146,10 @@ footer .container ul {
 
 footer .container ul a {
   color: black;
+}
+
+footer .aria img {
+  width: 100%;
 }
 
 @media (min-width: 768px) {

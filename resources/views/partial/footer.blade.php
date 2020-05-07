@@ -41,6 +41,9 @@
                     <li><a href="#">Home</a></li>
                 </ul>
             </div>
+            <section class="aria">
+                <img class="sfondo" src="{{asset('img/footer-montagne-bottom.jpg')}}" alt="">
+            </section>
         </footer>
     </body>
 </html>

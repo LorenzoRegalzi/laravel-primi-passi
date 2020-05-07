@@ -47,4 +47,18 @@ main {
             }
         }
     }
+    .prodotto{
+        background-color: #b8dae4;
+        img{
+            width: 100%;
+        }
+        h2{
+            text-align: center;
+            color: #002d75;
+        }
+        p {
+            color: #002d75;
+            padding: 40px;
+        }
+    }
 }

@@ -72,6 +72,24 @@ main .card-list .cards .card .hover a h3 {
   padding-bottom: 10px;
 }
 
+main .prodotto {
+  background-color: #b8dae4;
+}
+
+main .prodotto img {
+  width: 100%;
+}
+
+main .prodotto h2 {
+  text-align: center;
+  color: #002d75;
+}
+
+main .prodotto p {
+  color: #002d75;
+  padding: 40px;
+}
+
 header {
   background-color: #fff;
   text-align: center;
@@ -85,7 +103,7 @@ header li {
 }
 
 header li:hover {
-  background-color: azure;
+  background-color: #b8dae4;
 }
 
 header li:active {

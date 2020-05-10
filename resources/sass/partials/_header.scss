@@ -6,20 +6,23 @@ header{
             display: inline-block;
             width: 100px;
             height: 50px;
-
-        &:hover{
-            background-color: #b8dae4;
+            padding-top: 10px;
+            &:hover{
+                background-color: #daedf3;
+            }
+            &:active{
+                background-color: none;
+            }
+            a {
+                color: $link-color;
+                font-size: 15px;
+                width: 100%
+            }
         }
-        &:active{
-            background-color: none;
-        }
-        a {
-            color: $link-color;
-            font-size: 15px;
-            width: 100%
-        }
-    }
     .hamburger {
+        display: none;
+    }
+    .visible{
         display: none;
     }
     @media screen and (max-width: 768px) {
@@ -27,7 +30,17 @@ header{
           display: block;
           font-size: 30px;
       }
+      .visible.active{
+          display: block;
+      }
       li{
+          width: 100vw;;
+          height: 30px;
+          margin: 0;
+          padding-top: 0px;
+
+      }
+      .navbar{
           display: none;
       }
     }

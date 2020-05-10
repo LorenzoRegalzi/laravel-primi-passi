@@ -8,7 +8,7 @@
         <header>
             <img class="logo" src="{{asset('img/marchio-sito-test.png')}}" alt="">
             <nav>
-                <ul>
+                <ul class="navbar">
                     <li class="{{(url()->current() == route('prodotti')? 'active':'')}}">
                         <a href="{{route('prodotti')}}">Prodotti</a>
                     </li>
@@ -19,9 +19,20 @@
                         <a href="{{route('contatti')}}">Contatti</a>
                     </li>
                 </ul>
-                <div class="hamburger">
+                <a class="hamburger" href="#">
                     <i class="fas fa-bars"></i>
-                </div>
+                    <ul class="visible">
+                        <li class="{{(url()->current() == route('prodotti')? 'active':'')}}">
+                            <a href="{{route('prodotti')}}">Prodotti</a>
+                        </li>
+                        <li class="{{(url()->current() == route('home')? 'active':'')}}">
+                            <a href="{{route('home')}}">Home</a>
+                        </li>
+                        <li class="{{(url()->current() == route('contatti')? 'active':'')}}">
+                            <a href="{{route('contatti')}}">Contatti</a>
+                        </li>
+                    </ul>
+                </a>
             </nav>
         </header>
     </body>

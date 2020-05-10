@@ -19283,6 +19283,12 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+$(document).ready(function () {
+  $('.hamburger').click(function () {
+    $('.visible').toggleClass('active');
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

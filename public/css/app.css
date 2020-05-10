@@ -85,9 +85,15 @@ main .prodotto h2 {
   color: #002d75;
 }
 
-main .prodotto p {
+main .prodotto .testo {
   color: #002d75;
   padding: 40px;
+}
+
+main .prodotto .succ,
+main .prodotto .prec {
+  width: 100px;
+  height: 100px;
 }
 
 header {
@@ -100,10 +106,11 @@ header li {
   display: inline-block;
   width: 100px;
   height: 50px;
+  padding-top: 10px;
 }
 
 header li:hover {
-  background-color: #b8dae4;
+  background-color: #daedf3;
 }
 
 header li:active {
@@ -120,13 +127,28 @@ header .hamburger {
   display: none;
 }
 
+header .visible {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   header .hamburger {
     display: block;
     font-size: 30px;
   }
 
+  header .visible.active {
+    display: block;
+  }
+
   header li {
+    width: 100vw;
+    height: 30px;
+    margin: 0;
+    padding-top: 0px;
+  }
+
+  header .navbar {
     display: none;
   }
 }

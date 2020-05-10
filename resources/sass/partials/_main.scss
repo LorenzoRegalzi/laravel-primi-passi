@@ -56,9 +56,14 @@ main {
             text-align: center;
             color: #002d75;
         }
-        p {
+        .testo {
             color: #002d75;
             padding: 40px;
+        }
+        .succ,
+        .prec {
+            width: 100px;
+            height: 100px;
         }
     }
 }

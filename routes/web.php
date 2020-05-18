@@ -21,9 +21,17 @@ Route::get('/prodotti', function () {
     return view('prodotti');
 })->name('prodotti');
 
+
+
 Route::get('/prodotti/{id}', function ($id) {
     return view('prodotto' , compact('id'));
 })->name('prodotti.show');
+
+// Route::get(url: '/prodotti', action: 'ProductController@index')->name(name:'prodotti');
+//
+// Route::get(url: '/prodotti/{id}', action: 'ProductController@show')->name(name:'prodotti.show');
+
+
 
 Route::get('/contatti', function () {
     return view('contatti');
